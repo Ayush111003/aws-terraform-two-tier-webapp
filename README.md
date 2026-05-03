@@ -40,8 +40,9 @@ Each environment includes:
 - NAT Gateway
 - Security Groups
 
-![Figure 1: Architecture / Topology Diagram](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure1.jpg)
 *Figure 1: Architecture / Topology Diagram*
+![Figure 1: Architecture / Topology Diagram](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure1.jpg)
+
 
 ---
 
@@ -74,11 +75,12 @@ This ensures:
 - Clean separation of environments
 - Safe deployments
 
+*Figure 2: S3 Buckets and Image Storage Structure*
 ![Figure 2: S3 Buckets and Image Storage Structure](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure2-1.jpg)
 ![Figure 2: S3 Buckets (cont.)](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure2-2.jpg)
 ![Figure 2: S3 Buckets (cont.)](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure2-3.jpg)
 ![Figure 2: S3 Buckets (cont.)](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure2-4.jpg)
-*Figure 2: S3 Buckets and Image Storage Structure*
+
 
 ---
 
@@ -98,8 +100,9 @@ This approach enables:
 - Clear separation of infrastructure layers
 - Easier debugging and scaling
 
-![Figure 3: Cloud9 Project Directory Structure](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure3.jpg)
 *Figure 3: Cloud9 Project Directory Structure*
+![Figure 3: Cloud9 Project Directory Structure](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure3.jpg)
+
 
 ---
 
@@ -122,9 +125,10 @@ terraform apply
 
 This ensures controlled and repeatable deployments.
 
+*Figure 4: Terraform Apply Output (Deployment Execution)*
 ![Figure 4: Terraform Apply Output](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure4-1.jpg)
 ![Figure 4: Terraform Apply Output (cont.)](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure4-2.jpg)
-*Figure 4: Terraform Apply Output (Deployment Execution)*
+
 
 ---
 
@@ -145,10 +149,11 @@ The web page displays:
 
 Refreshing the application through the ALB DNS displays different instance metadata across requests, confirming that traffic is being distributed across multiple EC2 instances.
 
+*Figure 5: Web Application Output (Instance Metadata)*
 ![Figure 5: Web Application Output](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure5-1.jpg)
 ![Figure 5: Web Application Output (instance 2)](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure5-2.jpg)
 ![Figure 5: Web Application Output (instance 3)](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure5-3.jpg)
-*Figure 5: Web Application Output (Instance Metadata + Image Loaded)*
+
 
 ---
 
@@ -204,8 +209,9 @@ A GitHub Actions pipeline is implemented for Terraform validation and security s
 - Enforced best practices
 - Automated security checks
 
-![Figure 6: GitHub Actions Pipeline (Successful Execution)](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure6.png)
 *Figure 6: GitHub Actions Pipeline (Successful Execution)*
+![Figure 6: GitHub Actions Pipeline (Successful Execution)](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure6.png)
+
 
 ---
 
@@ -219,8 +225,9 @@ terraform destroy
 
 > **Important:** Destroy webservers before network to prevent dependency errors.
 
-![Figure 7: Terraform Destroy Process](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure7.jpg)
 *Figure 7: Terraform Destroy Process*
+![Figure 7: Terraform Destroy Process](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure7.jpg)
+
 
 ---
 
