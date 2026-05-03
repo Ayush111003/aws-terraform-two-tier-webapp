@@ -204,7 +204,7 @@ A GitHub Actions pipeline is implemented for Terraform validation and security s
 - Enforced best practices
 - Automated security checks
 
-<img src="https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure6.png" width="700"><br>
+<img src="https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure6.jpg" width="700"><br>
 *Figure 6: GitHub Actions Pipeline (Successful Execution)*
 
 ---
