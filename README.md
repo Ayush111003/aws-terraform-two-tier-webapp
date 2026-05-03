@@ -41,6 +41,7 @@ Each environment includes:
 - Security Groups
 
 *Figure 1: Architecture / Topology Diagram*
+
 ![Figure 1: Architecture / Topology Diagram](https://raw.githubusercontent.com/Ayush111003/aws-terraform-two-tier-webapp/main/images/figure1.jpg)
 
 
